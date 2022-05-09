@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Solution_18 {
 
@@ -10,6 +11,7 @@ public class Solution_18 {
     public static List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
+        result.toArray();
         int theLength = nums.length;
         for(int i = 0; i<theLength-3;i++){
             for(int j = theLength-1; j>i+2;j--){
